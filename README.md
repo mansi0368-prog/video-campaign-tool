@@ -59,3 +59,25 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Laravel Video Campaign Tool
+
+A job-queue-based Laravel app for video processing and email campaign automation.
+
+## Features
+
+- User auth (Laravel Breeze)
+- Video uploads
+- Background processing (Laravel Queues)
+- Status dashboard
+
+## Setup
+
+```bash
+git clone https://github.com/YOUR_USERNAME/video-campaign-tool.git
+cd video-campaign-tool
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan storage:link
+php artisan serve
